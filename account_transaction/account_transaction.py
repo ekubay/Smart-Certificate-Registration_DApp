@@ -20,6 +20,7 @@ def first_transaction_example(private_key, my_address):
     algod_client = algod.AlgodClient(algod_token, algod_address)
 
     print("My address: {}".format(my_address))
+
     account_info = algod_client.account_info(my_address)
     print("Account balance: {} microAlgos".format(account_info.get('amount')))
 
@@ -61,4 +62,13 @@ def first_transaction_example(private_key, my_address):
     account_info = algod_client.account_info(my_address)
     print("Final Account balance: {} microAlgos".format(account_info.get('amount')) + "\n")
 
+# using PureStake
+private_key = ""
+my_address = ""
 
+first_transaction_example(private_key, my_address)
+
+# # using PureStake
+# private_key = "y4I1bmi8nZ3OvcZnD2zRt1iFAvAUSqUU6v8BhpU4"
+# #my_address = "https://betanet-algorand.api.purestake.io/ps2"
+# my_address = 'https://testnet-algorand.api.purestake.io/ps2'
