@@ -1,2 +1,11 @@
+
 node_modules
-env 
+env
+build 
+# Environments
+env/
+venv/
+ENV/
+# data base related ignores
+
+
