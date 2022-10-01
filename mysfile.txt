@@ -1,3 +1,0 @@
-private_key = "y4I1bmi8nZ3OvcZnD2zRt1iFAvAUSqUU6v8BhpU4"
-#my_address = "https://betanet-algorand.api.purestake.io/ps2"
-my_address = 'https://testnet-algorand.api.purestake.io/ps2'
