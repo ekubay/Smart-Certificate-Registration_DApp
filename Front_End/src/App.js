@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import logo from './logo.svg'
+import logo from './logo.png'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Login from './components/login'
 import SignUp from './components/sign-up'
 import Logout from './components/logout'
 import useToken from './components/useToken'
-// import { USER_URL } from './backend_urls.js';
+import { USER_URL } from './backend_urls.js';
 
 const App = () => {
   const { token, removeToken, setToken } = useToken();
@@ -14,16 +14,19 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        {<h1 className="text" >
-          Smart certeficate Dapp
-        </h1>}
+        {/* <h1 className="text" >
+          10 Academy certeficate NFT minter
+        </h1> */}
         <Logout token={removeToken} />
         
         {token!=="" &&token!== null ?  
         (
           <>
             <Routes>
+              {/* <Route exact path="/user" element={<Profile token={token}/>}></Route> */}
               <Route exact path={USER_URL} ></Route>
+              {/* <h1>{USER_URL}</h1> */}
+
             </Routes>
           </>
         )
