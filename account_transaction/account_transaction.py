@@ -62,13 +62,15 @@ def first_transaction_example(private_key, my_address):
     account_info = algod_client.account_info(my_address)
     print("Final Account balance: {} microAlgos".format(account_info.get('amount')) + "\n")
 
-# using PureStake
-private_key = ""
-my_address = ""
-
-first_transaction_example(private_key, my_address)
-
 # # using PureStake
-# private_key = "y4I1bmi8nZ3OvcZnD2zRt1iFAvAUSqUU6v8BhpU4"
-# #my_address = "https://betanet-algorand.api.purestake.io/ps2"
-# my_address = 'https://testnet-algorand.api.purestake.io/ps2'
+# private_key = ""
+# my_address = ""
+
+def my_key():
+    # mnemonic_key
+    mnemonic_key ="fan utility duty clock document observe royal camp rare skull dwarf bacon lumber resist fashion lab expose drift squirrel note addict document abandon able sibling"
+   # address and publik key
+    my_address = mnemonic.to_private_key(mnemonic_key)
+    private_key = mnemonic.to_public_key(mnemonic_key)
+    first_transaction_example(private_key, my_address)
+my_key()

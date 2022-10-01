@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@json-rpc-tools/utils": "^1.7.6",
+    "@walletconnect/client": "^1.8.0",
+    "algorand-walletconnect-qrcode-modal": "^1.8.0",
+    "algosdk": "^1.21.0",
+    "dotenv": "^16.0.3"
+  }
+}
