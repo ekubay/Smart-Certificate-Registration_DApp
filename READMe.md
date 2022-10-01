@@ -7,9 +7,22 @@ The objective of this project is to build end-to-end Web3 dapps on the Algorand 
 ## Web2 vs Web3 
 - more information [here](https://www.emizentech.com/blog/web2-vs-web3.html)
 
+## Installing sandbox enviroment
+```
+git clone https://github.com/algorand/sandbox.git
+cd sandbox
+./sandbox up
+```
+## Installing dapp
+```
+git clone https://github.com/ekubay/Smart-Certificate-Registration_DApp.git
+cd Smart-Certificate-Registration_DApp
+pip install -r requirements.txt
+```
 ## The major componnents of the projects
 - Frontend
 - Backend
 - Wallet
 - NFT
 - Algorand Blockchain
+## 
