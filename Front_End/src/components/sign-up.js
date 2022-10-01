@@ -1,8 +1,9 @@
+import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 import { SIGNUP_URL } from '../backend_urls.js';
 
-const SignUp = (props) => {
+const Register = (props) => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -40,24 +41,24 @@ const SignUp = (props) => {
 
 
     const emailChange = (event) => {
-        const { value, name } = event.target
+        const { value} = event.target
         setEmail(value)
     }
     const passwordChange = (event) => {
-        const { value, name } = event.target
+        const { value} = event.target
         setPassword(value)
     }
     const firstNameChange = (event) => {
-        const { value, name } = event.target
+        const { value} = event.target
         setFirstName(value)
     }
     const lastNameChange = (event) => {
-        const { value, name } = event.target
+        const { value} = event.target
         setLastName(value)
     }
     return (
         <form>
-            <h3>Sign Up</h3>
+            <h3> User Registeration </h3>
             <div className="mb-3">
                 <label>First name</label>
                 <input
@@ -103,7 +104,7 @@ const SignUp = (props) => {
             </div>
             <div className="d-grid">
                 <button type="submit" className="btn btn-primary" onClick={signMeUp}>
-                    Sign Up
+                   Register
                 </button>
             </div>
             <p className="forgot-password text-right">
@@ -113,4 +114,4 @@ const SignUp = (props) => {
     )
 }
 
-export default sign-up;
+export default Register;

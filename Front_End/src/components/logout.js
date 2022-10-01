@@ -1,3 +1,5 @@
+import React from 'react'
+//import ReactDOM from 'react-dom'
 import axios from "axios";
 import { LOGOUT_URL } from '../backend_urls.js';
 
@@ -21,11 +23,8 @@ const Logout = (props) => {
 
   	return(
 		<header className="App-header">
-			<button onClick={logMeOut}> 
-        		Logout
-      </button>
-		</header>
+			<button onClick={logMeOut}> Logout </button> </header>
 	)
 }
 
-export default logout;
+export default Logout;

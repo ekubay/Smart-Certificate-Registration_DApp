@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 import { LOGIN_URL } from '../backend_urls.js';
@@ -36,17 +37,14 @@ const Login = (props) => {
     event.preventDefault()
   }
 
-
-
     const emailChange = (event) => {
-      const {value, name} = event.target
+      const {value} = event.target
       setEmail(value)
     }
     const passwordChange = (event) => {
-      const {value, name} = event.target
+      const {value} = event.target
       setPassword(value)
     }
-
 
   return (
     <form>
@@ -91,7 +89,7 @@ const Login = (props) => {
           className="btn btn-primary"
           onClick={logMeIn}
         >
-          Submit
+          Login
         </button>
       </div>
       {/* <p className="forgot-password text-right">
@@ -102,4 +100,4 @@ const Login = (props) => {
 }
 
 
-export default login;
+export default Login;
